@@ -23,7 +23,7 @@ function Detail() {
     getMovie();
   }, []);
 
-  console.log("asdasd", movie.title);
+  console.log(movie);
   return (
     <Detail_com
       title={movie.title}
@@ -31,6 +31,11 @@ function Detail() {
       scr_im1={movie.medium_screenshot_image1}
       scr_im2={movie.medium_screenshot_image2}
       scr_im3={movie.medium_screenshot_image3}
+      genres={movie.genres}
+      rating={movie.rating}
+      runtime={movie.runtime}
+      year={movie.year}
+      description={movie.description_full}
     />
   );
 }
